@@ -1,0 +1,1 @@
+"""FoodGuard AI source package."""

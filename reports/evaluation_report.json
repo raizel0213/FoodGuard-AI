@@ -1,0 +1,215 @@
+{
+  "best_model": "Logistic Regression",
+  "threshold": 0.6200134084763488,
+  "accuracy_threshold": 0.9349999999999999,
+  "test_metrics_at_threshold": {
+    "accuracy": 0.775,
+    "balanced_accuracy": 0.58,
+    "roc_auc": 0.6345142857142857,
+    "pr_auc": 0.3168180684539955,
+    "f1": 0.26229508196721313,
+    "precision": 0.2222222222222222,
+    "recall": 0.32
+  },
+  "test_metrics_at_050": {
+    "accuracy": 0.675,
+    "balanced_accuracy": 0.5914285714285714,
+    "roc_auc": 0.6345142857142857,
+    "pr_auc": 0.3168180684539955,
+    "f1": 0.2696629213483146,
+    "precision": 0.1875,
+    "recall": 0.48
+  },
+  "test_metrics_at_accuracy_threshold": {
+    "accuracy": 0.88,
+    "balanced_accuracy": 0.52,
+    "roc_auc": 0.6345142857142857,
+    "pr_auc": 0.3168180684539955,
+    "f1": 0.07692307692307693,
+    "precision": 1.0,
+    "recall": 0.04
+  },
+  "confusion_matrix": {
+    "labels": [
+      [
+        "TN",
+        "FP"
+      ],
+      [
+        "FN",
+        "TP"
+      ]
+    ],
+    "values": [
+      [
+        147,
+        28
+      ],
+      [
+        17,
+        8
+      ]
+    ]
+  },
+  "classification_report": {
+    "no issue": {
+      "precision": 0.8963414634146342,
+      "recall": 0.84,
+      "f1-score": 0.8672566371681416,
+      "support": 175.0
+    },
+    "issue": {
+      "precision": 0.2222222222222222,
+      "recall": 0.32,
+      "f1-score": 0.26229508196721313,
+      "support": 25.0
+    },
+    "accuracy": 0.775,
+    "macro avg": {
+      "precision": 0.5592818428184282,
+      "recall": 0.58,
+      "f1-score": 0.5647758595676774,
+      "support": 200.0
+    },
+    "weighted avg": {
+      "precision": 0.8120765582655827,
+      "recall": 0.775,
+      "f1-score": 0.7916364427680256,
+      "support": 200.0
+    }
+  },
+  "cv_comparison": [
+    {
+      "model": "Logistic Regression",
+      "cv_roc_auc_mean": 0.6790590038927105,
+      "cv_roc_auc_std": 0.08053280334315846,
+      "cv_pr_auc_mean": 0.29124181523206116,
+      "cv_f1_mean": 0.3004061181434599,
+      "cv_precision_mean": 0.20526437780675072,
+      "cv_recall_mean": 0.5626315789473684,
+      "cv_accuracy_mean": 0.68125
+    },
+    {
+      "model": "Hist Gradient Boosting",
+      "cv_roc_auc_mean": 0.6619249720044793,
+      "cv_roc_auc_std": 0.040815097532256,
+      "cv_pr_auc_mean": 0.28230754185937534,
+      "cv_f1_mean": 0.17450142450142447,
+      "cv_precision_mean": 0.3304761904761905,
+      "cv_recall_mean": 0.12052631578947368,
+      "cv_accuracy_mean": 0.8675
+    },
+    {
+      "model": "Gradient Boosting",
+      "cv_roc_auc_mean": 0.6617286300858529,
+      "cv_roc_auc_std": 0.05681074491704022,
+      "cv_pr_auc_mean": 0.29411027487469255,
+      "cv_f1_mean": 0.2608058608058608,
+      "cv_precision_mean": 0.2502702596070386,
+      "cv_recall_mean": 0.28157894736842104,
+      "cv_accuracy_mean": 0.8012500000000001
+    },
+    {
+      "model": "Extra Trees",
+      "cv_roc_auc_mean": 0.6591134485149043,
+      "cv_roc_auc_std": 0.051323960245167055,
+      "cv_pr_auc_mean": 0.2423985256353003,
+      "cv_f1_mean": 0.07815384615384616,
+      "cv_precision_mean": 0.18,
+      "cv_recall_mean": 0.05,
+      "cv_accuracy_mean": 0.85
+    },
+    {
+      "model": "Random Forest",
+      "cv_roc_auc_mean": 0.6480249293446382,
+      "cv_roc_auc_std": 0.05218204745385435,
+      "cv_pr_auc_mean": 0.2979689237433908,
+      "cv_f1_mean": 0.29994736446349346,
+      "cv_precision_mean": 0.38437352121562646,
+      "cv_recall_mean": 0.25157894736842107,
+      "cv_accuracy_mean": 0.8550000000000001
+    },
+    {
+      "model": "XGBoost",
+      "cv_roc_auc_mean": 0.6452383085373008,
+      "cv_roc_auc_std": 0.043273437415119936,
+      "cv_pr_auc_mean": 0.25797212113191276,
+      "cv_f1_mean": 0.22141465719559025,
+      "cv_precision_mean": 0.2977310924369748,
+      "cv_recall_mean": 0.18105263157894735,
+      "cv_accuracy_mean": 0.8475000000000001
+    }
+  ],
+  "feature_importance": [
+    {
+      "feature": "rainfall_mm",
+      "importance_mean": 0.04112761904761902,
+      "importance_std": 0.03144647432371857
+    },
+    {
+      "feature": "orders_ahead",
+      "importance_mean": 0.027870476190476178,
+      "importance_std": 0.01477296986217575
+    },
+    {
+      "feature": "distance_km",
+      "importance_mean": 0.018499047619047616,
+      "importance_std": 0.025692413696302437
+    },
+    {
+      "feature": "rider_experience_months",
+      "importance_mean": 0.016944761904761886,
+      "importance_std": 0.013512900227647588
+    },
+    {
+      "feature": "order_value_inr",
+      "importance_mean": 0.005196190476190451,
+      "importance_std": 0.00885311039797997
+    },
+    {
+      "feature": "is_weekend",
+      "importance_mean": 0.005135238095238074,
+      "importance_std": 0.00808374848502605
+    },
+    {
+      "feature": "traffic_index",
+      "importance_mean": 0.004540952380952394,
+      "importance_std": 0.02047960317075859
+    },
+    {
+      "feature": "restaurant_prep_est_min",
+      "importance_mean": 0.0003809523809524003,
+      "importance_std": 0.000532243785038402
+    },
+    {
+      "feature": "is_peak_hour",
+      "importance_mean": -0.00813714285714285,
+      "importance_std": 0.0035935422048768745
+    },
+    {
+      "feature": "city",
+      "importance_mean": -0.023040000000000022,
+      "importance_std": 0.01439315332319621
+    },
+    {
+      "feature": "vehicle_type",
+      "importance_mean": -0.030659047619047638,
+      "importance_std": 0.010620700960336312
+    }
+  ],
+  "data_stats": {
+    "n_rows": 1000,
+    "n_train": 800,
+    "n_test": 200,
+    "issue_rate": 0.124,
+    "base_rate_train": 0.12375
+  },
+  "meta": {
+    "trained_at": "2026-11-04T14:39:50.226638+00:00",
+    "sklearn_version": "1.9.1",
+    "threshold_strategy": "max F1 on out-of-fold training predictions (accuracy-optimal operating point also reported)",
+    "accuracy_threshold": 0.9349999999999999,
+    "selection_metric": "mean CV ROC-AUC",
+    "leakage_policy": "order_id and delivery_time_minutes excluded; only features available at dispatch time are used"
+  }
+}

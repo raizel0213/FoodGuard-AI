@@ -1,0 +1,11 @@
+pandas>=2.0
+numpy>=1.24
+# scikit-learn is intentionally NOT pinned: older releases have no wheels for
+# new Python versions (e.g. 3.14). The app detects a model pickle built with a
+# different sklearn version and retrains automatically with the local one.
+scikit-learn>=1.3
+xgboost>=2.0
+shap>=0.44
+streamlit>=1.32
+plotly>=5.18
+joblib>=1.3
